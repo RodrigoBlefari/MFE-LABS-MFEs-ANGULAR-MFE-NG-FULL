@@ -7,6 +7,8 @@
     "build": "ng build mfe-ng-full",
     "package": "ng build mfe-ng-full --configuration production && node tools/package-webcomponent.mjs",
     "vercel-build": "npm run package",
+    "pin-ts": "npm i -D typescript@5.4.5 --no-save",
+    "postinstall": "npm run pin-ts",
     "serve": "node tools/serve-webcomponent.mjs"
   },
   "dependencies": {
@@ -29,6 +31,6 @@
     "@types/jasmine": "^5.1.4",
     "jasmine-core": "^5.1.1",
     "karma": "^6.4.2",
-    "typescript": "^5.3.3"
+    "typescript": "5.4.5"
   }
 }
