@@ -6,6 +6,7 @@
     "start": "ng serve mfe-ng-full --port 9400",
     "build": "ng build mfe-ng-full",
     "package": "ng build mfe-ng-full --configuration production && node tools/package-webcomponent.mjs",
+    "vercel-build": "npm run package",
     "serve": "node tools/serve-webcomponent.mjs"
   },
   "dependencies": {
